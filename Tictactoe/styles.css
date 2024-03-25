@@ -1,0 +1,230 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #0c0513;
+    font-family: 'Arial', sans-serif;
+    color: #8af9f5;
+    font-weight: 500;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Add styling for the start screen */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: #8af9f5;
+}
+
+#start-screen label {
+    margin: 10px;
+    font-size: 16px; /* Set the desired font size */
+}
+
+#start-screen input {
+    padding: 5px;
+    margin-bottom: 15px;
+    color: black; 
+    font-size: 16px; /* Set the same font size as the label */
+}
+
+
+#start-btn {
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #27ae60;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    transition: background-color 0.3s ease;
+    color: #f2fab5;
+}
+
+.cell:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+#turn {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/* Styling for header */
+@keyframes glowHeading {
+    0% {
+        text-shadow: 0 0 10px #be50f4;
+    }
+    50% {
+        text-shadow: 0 0 20px #be50f4;
+    }
+    100% {
+        text-shadow: 0 0 10px #be50f4;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 3em;
+    color: #be50f4;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    animation: glowHeading 1.5s infinite alternate;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    color: #be50f4; /* Set the text color to match the glow color */
+    mix-blend-mode: overlay; /* Adjust blend mode as needed */
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1em;
+    color: #a8e5f4;
+}
+
+/* Styling for winner screen */
+@keyframes glowWinnerScreen {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+    }
+}
+
+#winner-screen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+    border: 2px solid #ecf0f1; /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Initial box shadow */
+    animation: glowWinnerScreen 1.5s infinite alternate; /* Apply glow animation */
+}
+
+
+#winner-message {
+    font-size: 1.5em;
+    color:white;
+    margin-bottom: 20px;
+}
+
+#restart-btn {
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Styling for footer */
+.footer {
+    background-color: #1b1a2e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}

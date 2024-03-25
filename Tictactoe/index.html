@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TIC-TAC-TOE</h1>
+        <p class="subtitle">Enjoy the classic game of strategy and wit</p>
+    </header><br><br>
+    <div id="start-screen">
+        <label for="playerX">Player X</label>
+        <input type="text" id="playerX" placeholder="Player X name" required>
+        <label for="playerO">Player O</label>
+        <input type="text" id="playerO" placeholder="Player O name" required>
+        <button id="start-btn">Start Game</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div id="game-board"></div>
+        <div id="turn">Current Turn: X</div>
+    </div>
+    <div id="winner-screen">
+        <div id="winner-message"></div>
+        <div id="restart-btn">Restart🔄️</div>
+    </div>
+    <div id="overlay"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>Designed and Developed by Sushma Duggirala</p>
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2024 SD</p>
+            </div>
+            <div class="footer-right">
+                <!-- Replace the placeholder icons with your actual social media icons -->
+                <a href="mailto:sushmaduggirala2197@gmail.com" target="_blank"><img src="mailbox.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/sushma-duggirala" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/_sushma__duggirala?igshid=NTBieTZvbzhicTFn" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/sushmaduggirala" target="_blank"><img src="github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
