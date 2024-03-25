@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushma Duggirala</title>
+
+    <link rel="icon" href="images/mylogo.png" type="image/icon type">    
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3d1d1c2895.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <a href="#"
+            ><img src="images/Sushma logo.png" alt="LOGO" class="logo"
+          /></a>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Coding Profiles</a></li>
+            <li><a href="#portfoio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Duggirala Sushma</span><br />from Vizag</h1>
+            <p class="line">Programmer,</p>
+            <p class="line">Web Developer,</p>
+            <p class="line">Software Engineer.</p>
+
+        </div>
+      </div>
+    </div>
+    <!-- ********************** ABOUT ******************* -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><br><br><br><br>
+            <img
+              src="images/profile.jpg"
+              alt="person-Standing"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="Subtitle-1">About Me</h1>
+            <p>
+                👋 Hello! I'm Duggirala Sushma, a Computer Science and Engineering undergraduate from 
+                NSRIT Engineering College,Visakhapatnam. 👩‍💻 With a passion for technology, I have honed
+                my skills in Full Stack Development, UI/UX Designing,and App Development. 🚀 My journey 
+                in the field has been marked by active participation in diverse projects, including 
+                the development of a timetable generation system, a cloud-powered task organizer, 
+                Quizzen - An Android App and Employee atrrition Prediction System.I thrive on challenges 
+                and believe in utilizing my technical skills and creativity to contribute to the growth of 
+                organizations.Through my endeavors, I aim to continuously enhance my professional growth 
+                and make meaningful contributions to the world of technology.🌐 Let's connect and create 
+                something amazing together! ✨
+            </p>
+
+            <div class="tab-tittles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br />C, C++, Python & Java</li>
+                <li>
+                  <span>Web Development</span><br />HTML,CSS,JS, React JS & Flask.
+                </li>
+                <li>
+                  <span>Tools</span><br />Power BI, Canva & Figma.
+                </li>
+                <li>
+                  <span>Database</span><br />MySQL.
+                </li>
+                <li>
+                  <span>Interests</span><br />Web Development, UI/UX Designing & App Development.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>05/2023- 09/2023</span><br />
+                  Intern at Demy Software Solutions- Mentored Students in Data structures course.
+                </li>
+                <li>
+                  <span>05/2023- 11/2023</span><br />Intern at Demy Software Solutions(DSS)
+                  worked under a project of connectify- social media web app.
+                </li>
+                <li>
+                  <span>06/2022-07/2022</span><br />Summer Intern at HMI Engineering Services, Worked 
+                  under project of Timetable generation System.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2024</span><br />
+                  Btech CS Graduate at NSRIT - 85%
+                </li>
+                <li>
+                  <span>2018 - 2020</span><br />
+                  Intermediate at Sri Viswasanthi Jr College - 95%
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />
+                  SSC at Sri Viswasanthi Educational Institutions - 10 GPA
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------- SERVICES --------------------- -->
+    <div id="services">
+<div class="container">
+    <h1 class="Subtitle-1">Coding Profiles</h1>
+    <div class="service-list">
+        <div class="amb">
+            <i class="icon-box"><img src="images/leetcode.png" alt="LeetCode Icon"></i>
+            <h2><b>LeetCode </b> </h2>
+            <p>
+                Solved 200+ Problems
+            </p>
+            <a href="https://leetcode.com/sushmaduggirala/" target="_blank">Visit Profile</a>
+        </div>
+        <div class="amb">
+            <i class="icon-box"><img src="images/codechef.png" alt="CodeChef Icon"></i>
+            <h2><b>CodeChef</b></h2>
+            <p>
+                Solved 120+ Problems
+            </p>
+            <a href="https://www.codechef.com/users/sushma03" target="_blank">Visit Profile</a>
+        </div>
+        <div class="amb">
+            <i class="icon-box"><img src="images/hackerrank.png" alt="HackerRank Icon"></i>
+            <h2><b>HackerRank </b></h2>
+            <p>
+                5⭐ Coder in C, C++ and Python
+            </p>
+            <a href="https://www.hackerrank.com/profile/sushmaduggirala1" target="_blank">Visit Profile</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <!-- ----------------------- PORTFOLIO --------------------- -->
+    <div id="portfoio">
+      <div class="container">
+        <h1 class="Subtitle-1">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/attrition.jpg" alt="" />
+            <div class="layer">
+              <h3>Employee Attrition Prediction System</h3>
+              <p>
+                Capstone Project done using Machine Learning Algorithms and Flask.
+                This System is used to predict the Attrition of Employees and finds the factors for attrition.
+              </p>
+              <a href="https://github.com/sushmaduggirala/Employee-Attrition-Prediction-System"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/quizzen.jpg" alt="" />
+            <div class="layer">
+              <h3>Quizzen</h3>
+              <p>
+                The Quizzen…! app is a beginner-level Android application that allows users to test their knowledge
+                 on programming.The app contains a collection of simple questions on programming language in the form 
+                 of MCQ’S.
+              </p>
+              <a href="https://github.com/sushmaduggirala/Quizzen-Androidn-App"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/stickynotes.jpg" alt="" />
+            <div class="layer">
+              <h3>Sticky Notes</h3>
+              <p>
+                A digital space for quick and organized note-taking,offering customizable
+                 virtual sticky notes for efficient task management and reminders.</p>
+              <a href="https://github.com/sushmaduggirala/sticky-note"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/sushmaduggirala" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ----------------------CONTACT----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Subtitle-1">Contact Me</h1>
+            <p>Feel Free To contact me for questions and Opportunities..!</p>
+            <p><i class="fa-solid fa-envelope"></i>sushmaduggirala2197@gmail.com</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/sushma-duggirala"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/_sushma__duggirala?igsh=NTBieTZvbzhicTFn"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/sushma.duggirala.39"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/sushmaduggirala"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+
+            </div>
+            <a href="Sushma Resume.pdf" download class="btn btn2"
+              >Check My Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="35e2ecc4-8f3b-4b02-8905-5592f61ac3f8">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email ID"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message...."
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <div id="msg"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sad = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sad.style.right = "0";
+      }
+
+      function closemenu() {
+        sad.style.right = "-200px";
+      }
+    </script>
+
+
+<script>
+  var form = document.querySelector("form");
+  var msg = document.getElementById("msg");
+  var scriptURL = "https://api.web3forms.com/submit";
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var formData = new FormData(form);
+
+    fetch(scriptURL, { method: "POST", body: formData })
+      .then((response) => {
+        if (response.ok) {
+          
+          msg.innerHTML = "Message Sent Successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+            form.reset(); 
+          }, 5000);
+        } else {
+          
+          msg.innerHTML = "Error: Message could not be sent";
+        }
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        msg.innerHTML = "Error: Message could not be sent";
+      });
+  });
+</script>
+
+
+
+  </body>
+</html>
